@@ -39,11 +39,45 @@
 
 button
 {
-  width: 150px;
-  height:40px;
-  border-radius: 8px;
-  margin: 8px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 180px;
+  height: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#fff;
   font-size: 16px;
-  font-weight: bold;
+  line-height: 40px;
+  border-radius: 20px;
+  border:none;
+  margin-top: 40px;
+  background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+button:hover
+{
+  background: linear-gradient(360deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 35%, rgba(2,0,36,1)  100%)
+}
+
+section
+{
+  width:80%;
+  margin: 0 auto;
+}
+
+article
+{
+  text-align: left;
+}
+
+article h3
+{
+  font-size: 24dip;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:steelblue;
+}
+
+article p
+{
+  font-size: 16dip;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#282c34;
 }

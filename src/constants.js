@@ -1,3 +1,6 @@
-export const MAKE_GREEN = 'MAKE_GREEN';
-export const MAKE_RED = 'MAKE_RED';
-export const MAKE_BLUE = 'MAKE_BLUE';
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
+
+export const POSTS_LOADING = 'POSTS_LOADING';
+export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';
+export const GET_POSTS_ERROR = 'GET_POSTS_ERROR';

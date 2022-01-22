@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import { ButtonsContainer } from "./Containers/ButtonsBackgroundChange";
+
+
+import { PostsContainer } from "./pages/posts";
 
 
 function App() {
-
   return (
     <div className="App">
-        <ButtonsContainer />
+        <PostsContainer />
     </div>
   );
 }
