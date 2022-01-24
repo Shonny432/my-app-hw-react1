@@ -7,11 +7,13 @@ import { getPosts } from "../../actions/posts";
 class Posts extends React.Component {
 
     render() {
-        const { posts, getPosts } = this.props;
+        const { posts, getPosts, isLoading } = this.props;
 
-        return <>
-        <Button text="Get Posts" handleClick={getPosts} />
-    
+        return isLoading ? (<h3>Loading....</h3>) : 
+            (
+            <>
+            <Button text="Get Posts" handleClick={getPosts} />
+            
             <section>{
                 posts.map((item) => (
                     <article key={item.id}>
@@ -20,9 +22,12 @@ class Posts extends React.Component {
                     </article>
                 ))
             }</section>
+            </>
+            );
+    
         
-        </>
     }
+
 }
 
 const mapStateToProps = ({ album }) => ({
